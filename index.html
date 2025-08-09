@@ -2,65 +2,69 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プライバシーポリシー・利用規約一覧</title>
+  <link rel="stylesheet" href="assets/css/common.css">
   <style>
-    body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      padding: 2em;
-      max-width: 600px;
-      margin: auto;
-      background-color: #f9f9f9;
+    .app-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-color, #007bff);
     }
-    h1 {
-      text-align: center;
-      color: #333;
+    .app-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
     }
-    h2 {
-      margin-top: 2em;
-      color: #007acc;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-    a {
-      color: #007acc;
+    .app-links a {
+      padding: 8px 16px;
+      background-color: var(--primary-color, #007bff);
+      color: white;
+      border-radius: 4px;
       text-decoration: none;
+      font-size: 0.9rem;
     }
-    a:hover {
-      text-decoration: underline;
+    .app-links a:hover {
+      background-color: var(--primary-color-dark, #0056b3);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>プライバシーポリシー・利用規約一覧</h1>
+  <div class="container">
+    <h1>プライバシーポリシー・利用規約一覧</h1>
 
-  <h2>ごはん、なにつくる？</h2>
-  <ul>
-    <li><a href="gohan/privacy.html">プライバシーポリシー</a></li>
-    <li><a href="gohan/terms.html">利用規約</a></li>
-  </ul>
+    <div class="app-section">
+      <h2>ごはん、なにつくる？</h2>
+      <div class="app-links">
+        <a href="gohan/privacy.html">プライバシーポリシー</a>
+        <a href="gohan/terms.html">利用規約</a>
+      </div>
+    </div>
 
-  <h2>自分より怒るAI</h2>
-  <ul>
-    <li><a href="Okoru/privacy.html">プライバシーポリシー</a></li>
-    <li><a href="Okoru/terms.html">利用規約</a></li>
-  </ul>
+    <div class="app-section">
+      <h2>怒る専用アプリ</h2>
+      <div class="app-links">
+        <a href="Okoru/privacy.html">プライバシーポリシー</a>
+        <a href="Okoru/terms.html">利用規約</a>
+      </div>
+    </div>
 
-    <h2>あれあった？</h2>
-  <ul>
-    <li><a href="areatta/privacy.html">プライバシーポリシー</a></li>
-    <li><a href="areatta/terms.html">利用規約</a></li>
-  </ul>
+    <div class="app-section">
+      <h2>あれあったっけ？</h2>
+      <div class="app-links">
+        <a href="areatta/privacy.html">プライバシーポリシー</a>
+        <a href="areatta/terms.html">利用規約</a>
+      </div>
+    </div>
 
-  <h2>シュミのしるし</h2>
-  <ul>
-    <li><a href="syumi/privacy.html">プライバシーポリシー</a></li>
-    <li><a href="syumi/terms.html">利用規約</a></li>
-  </ul>
+    <div class="footer">
+      <p><strong>運営者：</strong>waya<br>
+      <strong>連絡先：</strong><a href="mailto:kensyumi.app@gmail.com">kensyumi.app@gmail.com</a></p>
+    </div>
+  </div>
+  <script src="assets/js/common.js"></script>
 </body>
 </html>
