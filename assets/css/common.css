@@ -161,3 +161,13 @@ a:hover {
   --primary-color: #28a745;
   --primary-color-dark: #1e7e34;
 }
+
+.theme-golf {
+  --primary-color: #00E676;
+  --primary-color-dark: #00C853;
+}
+
+.theme-arealist {
+  --primary-color: #2196F3;
+  --primary-color-dark: #1976D2;
+}
