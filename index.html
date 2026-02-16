@@ -1,141 +1,241 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hovvy apps - プライバシーポリシー・利用規約</title>
-  <link rel="stylesheet" href="assets/css/common.css">
-  <style>
-    .app-section {
-      margin-bottom: 30px;
-      padding: 20px;
-      background-color: #f8f9fa;
-      border-radius: 8px;
-      border-left: 4px solid var(--primary-color, #007bff);
-    }
-    .app-links {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .app-links a {
-      padding: 8px 16px;
-      background-color: var(--primary-color, #007bff);
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .app-links a:hover {
-      background-color: var(--primary-color-dark, #0056b3);
-      text-decoration: none;
-    }
-    .support-button {
-      display: inline-block;
-      background: linear-gradient(135deg, #28a745, #20c997);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-      transition: all 0.3s ease;
-    }
-    .support-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
-      text-decoration: none;
-      color: white;
-    }
-    .support-container {
-      text-align: center;
-      margin-bottom: 30px;
-      padding: 20px;
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-      border-radius: 10px;
-      border: 1px solid #dee2e6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hovvy apps - プライバシーポリシー・利用規約</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- hovvyのスタイルをベースにする -->
+    <link rel="stylesheet" href="../hovvy/style.css">
+    <style>
+        /* 追加スタイル */
+        body {
+            padding-top: 80px; /* 固定ヘッダーの分 */
+            background-color: var(--light-bg);
+        }
+        
+        .page-header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .privacy-container {
+            max-width: 800px; /* 少し幅を狭める */
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .policy-list {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .policy-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.2s;
+        }
+
+        .policy-item:last-child {
+            border-bottom: none;
+        }
+
+        .policy-item:hover {
+            background-color: #fafafa;
+        }
+
+        .app-info-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .app-icon-small {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        .app-name-row {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .policy-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .policy-link {
+            font-size: 0.9rem;
+            color: #666;
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 20px;
+            background-color: #f5f5f5;
+            transition: all 0.2s;
+        }
+
+        .policy-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .policy-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .policy-links {
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="site-header">
-      <img src="assets/images/logo.png" alt="hovvy apps" class="site-logo">
-    </div>
-    
-    <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 1.1rem;">各アプリのプライバシーポリシー・利用規約</p>
-    
-    <div class="support-container">
-      <p style="margin: 0 0 15px 0; color: #666; font-size: 0.95rem;">
-        アプリに関するご質問・不具合報告・機能要望はこちら
-      </p>
-      <a href="support.html" class="support-button">
-        🛠️ サポートページ
-      </a>
+
+    <!-- ヘッダー (hovvyと同じ) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../hovvy/index.html" style="display:flex; align-items:center;">
+                    <img src="../hovvy/images/hovvy.png" alt="hovvy" style="height: 40px; width: auto;">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../hovvy/index.html#apps">アプリ紹介</a></li>
+                    <li><a href="../hovvy/index.html#data">データ分析</a></li>
+                    <li><a href="../hovvy/index.html#about">会社概要</a></li>
+                    <li><a href="../hovvy/index.html#contact" class="cta-button" style="padding: 8px 20px; font-size: 0.9rem;">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1 class="section-title" style="margin-bottom: 1rem;">Policies & Terms</h1>
+        <p style="color: #666;">各アプリのプライバシーポリシーと利用規約</p>
     </div>
 
-    <div class="app-section">
-      <h2>シュミのしるし</h2>
-      <div class="app-links">
-        <a href="shumi/privacy.html">プライバシーポリシー</a>
-        <a href="shumi/terms.html">利用規約</a>
-      </div>
+    <div class="privacy-container">
+        <div class="policy-list">
+            
+            <!-- シュミのしるし -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/shumi_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">シュミのしるし</span>
+                </div>
+                <div class="policy-links">
+                    <a href="shumi/privacy.html" class="policy-link">プライバシーポリシー</a>
+                    <a href="shumi/terms.html" class="policy-link">利用規約</a>
+                </div>
+            </div>
+
+            <!-- あれあった？ -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/areatta_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">あれあった？</span>
+                </div>
+                <div class="policy-links">
+                    <a href="areatta/privacy.html" class="policy-link">プライバシーポリシー</a>
+                    <a href="areatta/terms.html" class="policy-link">利用規約</a>
+                </div>
+            </div>
+
+            <!-- 怒る専用アプリ -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/okoru_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">怒る専用アプリ</span>
+                </div>
+                <div class="policy-links">
+                    <a href="Okoru/privacy.html" class="policy-link">プライバシーポリシー</a>
+                    <a href="Okoru/terms.html" class="policy-link">利用規約</a>
+                </div>
+            </div>
+
+            <!-- NiceShot Log -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/golf_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">NiceShot Log</span>
+                </div>
+                <div class="policy-links">
+                    <a href="golf/privacy.html" class="policy-link">プライバシーポリシー</a>
+                    <a href="golf/terms.html" class="policy-link">利用規約</a>
+                </div>
+            </div>
+
+            <!-- Arealist -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/arealist_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">Arealist</span>
+                </div>
+                <div class="policy-links">
+                    <a href="arealist/privacy.html" class="policy-link">プライバシーポリシー</a>
+                    <a href="arealist/terms.html" class="policy-link">利用規約</a>
+                </div>
+            </div>
+
+            <!-- Kaigo Taxi -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/taxi_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">Kaigo Taxi</span>
+                </div>
+                <div class="policy-links">
+                    <a href="taxi/privacy.html" class="policy-link">プライバシーポリシー</a>
+                    <a href="taxi/terms.html" class="policy-link">利用規約</a>
+                </div>
+            </div>
+
+            <!-- Solotice -->
+            <div class="policy-item">
+                <div class="app-info-row">
+                    <img src="assets/images/solotice_icon.png" alt="icon" class="app-icon-small">
+                    <span class="app-name-row">Solotice</span>
+                </div>
+                <div class="policy-links">
+                    <a href="solotice/privacy.html" class="policy-link">プライバシーポリシー</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+           <a href="support.html" class="cta-button" style="background-color: var(--white); color: var(--primary-color); border: 2px solid var(--primary-color);">
+             🛠️ サポート・お問い合わせ
+           </a>
+        </div>
     </div>
 
-    <div class="app-section">
-      <h2>あれあった？</h2>
-      <div class="app-links">
-        <a href="areatta/privacy.html">プライバシーポリシー</a>
-        <a href="areatta/terms.html">利用規約</a>
-      </div>
-    </div>
+    <!-- フッター (hovvyと同じ) -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="../hovvy/index.html#apps">アプリ紹介</a>
+                <a href="../hovvy/index.html#data">データ分析</a>
+                <a href="../hovvy/index.html#about">会社概要</a>
+                <a href="index.html">プライバシーポリシー</a>
+            </div>
+            <p class="copyright">&copy; 2025 hovvy. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    <div class="app-section">
-      <h2>怒る専用アプリ</h2>
-      <div class="app-links">
-        <a href="Okoru/privacy.html">プライバシーポリシー</a>
-        <a href="Okoru/terms.html">利用規約</a>
-      </div>
-    </div>
-
-    <div class="app-section">
-      <h2>NiceShot Log</h2>
-      <div class="app-links">
-        <a href="golf/privacy.html">プライバシーポリシー</a>
-        <a href="golf/terms.html">利用規約</a>
-      </div>
-    </div>
-
-    <div class="app-section">
-      <h2>Arealist</h2>
-      <div class="app-links">
-        <a href="arealist/privacy.html">プライバシーポリシー</a>
-        <a href="arealist/terms.html">利用規約</a>
-      </div>
-    </div>
-
-    <div class="app-section">
-      <h2>ごはん、なにつくる？</h2>
-      <div class="app-links">
-        <a href="gohan/privacy.html">プライバシーポリシー</a>
-        <a href="gohan/terms.html">利用規約</a>
-      </div>
-      <p style="margin-top:10px;font-size:0.9rem;color:#555;">
-        統合のお知らせ：本アプリの機能は「<strong>あれあった？</strong>」に統合されました。最新のドキュメントはこちら →
-        <a href="areatta/privacy.html">あれあった？ プライバシーポリシー</a>／
-        <a href="areatta/terms.html">あれあった？ 利用規約</a>
-      </p>
-    </div>
-
-    <div class="footer">
-      <p><strong>運営者：</strong>waya<br>
-      <strong>連絡先：</strong><a href="mailto:kensyumi.app@gmail.com">kensyumi.app@gmail.com</a></p>
-      <p style="margin-top: 20px; color: #888; font-size: 0.9rem;">
-        © 2025 hovvy. All rights reserved.
-      </p>
-    </div>
-  </div>
-  <script src="assets/js/common.js"></script>
 </body>
 </html>
